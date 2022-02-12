@@ -1,0 +1,484 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.container {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+#header {
+  height: 120vh;
+  width: 100%;
+  background: url(../images/banner/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 2rem;
+}
+/* .logo{
+
+} */
+.navItem {
+  margin-top: 20px;
+  color: #3d2514;
+}
+.delivery {
+  text-align: right;
+  font-family: "Roboto", sans-serif;
+}
+.navList ul {
+  list-style: none;
+  text-transform: uppercase;
+}
+.navList ul li {
+  display: inline-block;
+  margin-left: 2rem;
+  margin-top: 20px;
+  letter-spacing: 3px;
+}
+.navList ul li a {
+  color: #3d2514;
+  font-family: "Bebas Neue", cursive;
+  display: block;
+  font-size: 20px;
+}
+.bar {
+  text-align: right;
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 5rem;
+}
+.bar .fas {
+  font-size: 2rem;
+}
+#tryIt {
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+.tryItToday {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 220px);
+  align-items: start;
+  grid-column-gap: 40px;
+  color: white;
+}
+.tryItToday img {
+  border-radius: 10px;
+
+  position: absolute;
+}
+.tryItToday .text {
+  position: relative;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", cursive;
+  line-height: 30px;
+  padding: 25px;
+  letter-spacing: 2px;
+}
+.text h1 {
+  font-size: 34px;
+}
+.text h2 {
+  font-size: 21px;
+}
+.food1 {
+  grid-column: 1/5;
+  grid-row: 1/3;
+}
+.food2 {
+  grid-column: 7/12;
+}
+.food3 {
+  grid-column: 7/12;
+}
+.alTB {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.alwaysTasty {
+  text-align: center;
+  background-color: #ffc045;
+  padding: 1rem;
+  width: 220px;
+  font-size: 24px;
+  color: #3d2514;
+  margin: auto;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", cursive;
+}
+.chooseHeader {
+  font-family: "Alfa Slab One", cursive;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 44px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #3d2514;
+}
+.alwaysText {
+  text-align: center;
+  font-size: 18px;
+  color: #3d2514;
+}
+.card {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-top: 30px;
+  text-align: center;
+  grid-gap: 20px;
+}
+.commonCard {
+  height: 600px;
+  width: 350px;
+  color: #3d2514;
+}
+.commonCard button {
+  background-color: #bf2222;
+  color: white;
+  width: 190px;
+  padding: 15px;
+  border: none;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 30px;
+  cursor: pointer;
+}
+.cardHeader {
+  color: #3d2514;
+  font-family: "Bebas Neue", cursive;
+  margin-top: 20px;
+  font-size: 30px;
+}
+.cardMain {
+  grid-column: 1/4;
+}
+.cardMain2 {
+  grid-column: 5/8;
+}
+.cardMain3 {
+  grid-column: 9/12;
+}
+
+/* swiper code */
+.swiper {
+  width: 100%;
+  height: 500px;
+}
+.slider {
+  width: 100%;
+}
+.mySwiper {
+  box-shadow: 0 7px 20px rgb(0 0 0 / 0.2);
+  margin-bottom: 40px;
+}
+.slidea {
+  grid-column: 1/6;
+}
+.slideb {
+  grid-column: 7/12;
+}
+.swiper-slide {
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: baseline;
+}
+.slidea h1,
+h2 {
+  text-transform: uppercase;
+}
+.slidea h2 {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+.slidea h1 {
+  font-family: "Alfa Slab One", cursive;
+  color: #3d2514;
+  font-size: 40px;
+}
+.slide {
+  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 40px;
+  padding: 30px;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slidea h1 {
+  letter-spacing: 3px;
+}
+.slidea p {
+  line-height: 30px;
+  font-size: 20px;
+}
+
+/* reservation */
+.reserve_main {
+  background-image: url(../images/foods/bg1.png), url(../images/foods/bg2.png),
+    url(../images/foods/bg3.png);
+  background-repeat: no-repeat;
+  background-position: left top, left 100px top 230px, right bottom;
+  background-size: auto, 130px, 230px;
+  height: 600px;
+}
+.reserve {
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+.reserve h3 {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 300;
+  letter-spacing: 3px;
+  height: 40px;
+}
+.reserve h1 {
+  font-family: "Alfa Slab One", cursive;
+  color: #3d2514;
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+.input_box {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+.input_box input,
+button {
+  width: 370px;
+  height: 60px;
+  font-size: 30px;
+  border-radius: 5px;
+  margin: 10px;
+  border: 1px solid rgb(51, 50, 50);
+  padding: 10px;
+}
+.input_box button {
+  cursor: pointer;
+  border: none;
+  background-color: #bf2222;
+  color: white;
+  font-family: "Alfa Slab One", cursive;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+/* footer */
+.footer_main {
+  background-image: url(../images/foods/footer.png);
+  background-repeat: no-repeat;
+  min-height: 520px;
+}
+/* responsive nav bar */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #nav {
+    flex-direction: column;
+    align-items: stretch;
+    background-color: #e2e2e8;
+  }
+
+  .navItem {
+    margin-top: 5px;
+  }
+  .logo img {
+    width: 100px;
+    margin-left: 2rem;
+  }
+  .bar {
+    display: block;
+    color: #42200b;
+  }
+  .navList {
+    display: none;
+  }
+  .navList ul {
+    flex-direction: column;
+    width: 100%;
+
+    padding: 20px;
+  }
+  .navList ul li {
+    display: block;
+    text-align: center;
+  }
+  .navList ul li a:hover {
+    background-color: rgb(58, 58, 61);
+    color: white;
+  }
+  .navList ul li a {
+    padding: 10px;
+  }
+  .delivery {
+    display: none;
+  }
+  .active {
+    display: flex;
+  }
+}
+
+/* for mobile */
+@media screen and (max-width: 767px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #nav {
+    flex-direction: column;
+    align-items: stretch;
+    background-color: #e2e2e8;
+  }
+
+  .navItem {
+    margin-top: 5px;
+  }
+  .logo img {
+    width: 100px;
+    margin-left: 2rem;
+  }
+  .bar {
+    display: block;
+    color: #42200b;
+  }
+  .navList {
+    display: none;
+  }
+  .navList ul {
+    flex-direction: column;
+    width: 100%;
+
+    padding: 20px;
+  }
+  .navList ul li {
+    display: block;
+    text-align: center;
+  }
+  .navList ul li a:hover {
+    background-color: rgb(58, 58, 61);
+    color: white;
+  }
+  .navList ul li a {
+    padding: 10px;
+  }
+  .delivery {
+    display: none;
+  }
+  .active {
+    display: flex;
+  }
+  .tryItToday {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 40px;
+  }
+  .tryItToday img {
+    width: 90%;
+  }
+  .food1 {
+    grid-column: 1/12;
+    grid-row: 1/3;
+  }
+  .food2 {
+    grid-column: 1/12;
+  }
+  .food3 {
+    grid-column: 1/12;
+  }
+  .cardMain {
+    grid-column: 1/12;
+  }
+  .cardMain2 {
+    grid-column: 1/12;
+  }
+  .cardMain3 {
+    grid-column: 1/12;
+  }
+  .commonCard {
+    margin: auto;
+  }
+  .slide {
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    padding: 30px;
+  }
+  .slidea {
+    grid-column: 1/12;
+  }
+  .slideb {
+    grid-column: 1/12;
+  }
+  .slidea h1 {
+    letter-spacing: 0px;
+    font-size: 30px;
+  }
+  .slidea p {
+    line-height: 20px;
+    font-size: auto;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .reserve_main {
+    background-image: url(../images/foods/);
+    background-repeat: no-repeat;
+    background-size: auto, 130px, 230px;
+    height: auto;
+  }
+  .reserve {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .input_box {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .input_box input,
+  button {
+    width: 370px;
+    height: 60px;
+    font-size: 30px;
+    border-radius: 5px;
+    margin: 10px;
+    border: 1px solid rgb(51, 50, 50);
+    padding: 10px;
+  }
+  .input_box button {
+    cursor: pointer;
+    border: none;
+    background-color: #bf2222;
+    color: white;
+    font-family: "Alfa Slab One", cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+}
